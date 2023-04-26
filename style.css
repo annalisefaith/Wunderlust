@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END OF RESET */
+
+html{
+     background-image: linear-gradient(#55bbd5,#FFFFFF 5%);
+}
+h1, h2, h3 {
+  font-family: 'Molle', cursive;
+}
+h4, p, q, small, nav, button, form{
+  font-family: 'Montserrat', sans-serif;
+}
+/* nav */
+h1{
+  font-size: 50pt;
+  padding-top: 5px;
+}
+[class="sr-only"]{
+    visibility: hidden;
+}
+.introM, header {
+  padding-left: 50px;
+}
+.introM {
+  padding-top: 50px;
+}
+.introM, p {
+  font-size: 20pt;
+}
+header{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+nav {
+  display: flex;
+  align-items: center;
+    grid-column-start:1;
+
+}
+
+label{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#skip{
+  visibility: hidden;
+}
+header h1, p {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+header p{
+    padding-top: 70px;;
+    font-size: 25pt;
+}
+#menu-toggle {
+  position: relative;
+}
+
+#toggle {
+  display: none;
+}
+
+[for="toggle"] {
+  display: block;
+  padding: 5px;
+  color: #333;
+  background-color:#F6D64A;
+  cursor: pointer;
+}
+#menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #55BCD5;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+#menu li {
+  margin: 0;
+}
+
+#menu li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px;
+border-color: #333;
+border-style: solid;
+padding-left: 20px;
+}
+label:hover{
+    background-color: #333;
+    color: #fff;
+}
+#toggle:checked ~ #menu {
+  opacity: 1;
+  visibility: visible;
+}
+/* BODY START */
+h2{
+  font-size: 25pt;
+}
